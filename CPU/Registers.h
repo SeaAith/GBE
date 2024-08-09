@@ -1,8 +1,11 @@
 #include <iostream>
 #include <cstdint>
+#include <FlagsRegister.h>
 
 class Registers {
     private:
+    public:
+        FlagsRegister flags;
         uint8_t a;
         uint8_t b;
         uint8_t c;
@@ -11,7 +14,7 @@ class Registers {
         uint8_t f;
         uint8_t h;
         uint8_t l;
-    public:
+
         Registers();
         ~Registers();
 

@@ -3,6 +3,10 @@
 #include <FlagsRegister.h>
 
 FlagsRegister::FlagsRegister() {
+    zero = false;
+    subtract = false;
+    half_carry = false;
+    carry = false;
 }
 
 FlagsRegister::FlagsRegister(uint8_t byte) {

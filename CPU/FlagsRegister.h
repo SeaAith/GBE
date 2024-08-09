@@ -8,8 +8,8 @@ const uint8_t CARRY_FLAG_BYTE_POSITION = 4;
 
 class FlagsRegister {
 private:
-    bool zero, subtract, half_carry, carry;
 public:
+    bool zero, subtract, half_carry, carry;
     FlagsRegister();
     FlagsRegister(uint8_t byte);
     ~FlagsRegister();
