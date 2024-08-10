@@ -1,7 +1,7 @@
-#include <CPU.h>
+#include "CPU.h"
 #include <iostream>
 #include <variant>
-#include <Registers.h>
+#include "Registers.h"
 
 void CPU::execute(const Instruction& instruction) {
     switch (instruction.type) {
@@ -18,6 +18,12 @@ void CPU::execute(const Instruction& instruction) {
 
 void CPU::handleAdd(ArithmeticTarget target) {
     switch (target) {
+        case ArithmeticTarget::A: {
+            uint8_t value = registers.a;
+            uint8_t new_value = add(value);
+            registers.a = new_value;
+            break;
+        }
         case ArithmeticTarget::B: {
             uint8_t value = registers.b;
             uint8_t new_value = add(value);

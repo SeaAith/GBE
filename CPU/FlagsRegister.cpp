@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdint>
-#include <FlagsRegister.h>
+#include "FlagsRegister.h"
 
 FlagsRegister::FlagsRegister() {
     zero = false;

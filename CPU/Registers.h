@@ -1,6 +1,9 @@
+#ifndef REGISTERS_H
+#define REGISTERS_H
+
 #include <iostream>
 #include <cstdint>
-#include <FlagsRegister.h>
+#include "FlagsRegister.h"
 
 class Registers {
     private:
@@ -30,3 +33,5 @@ class Registers {
         uint16_t get_hl();
         void set_hl(uint16_t value);
 };
+
+#endif

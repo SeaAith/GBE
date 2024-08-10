@@ -1,3 +1,6 @@
+#ifndef FLAGS_H
+#define FLAGS_H
+
 #include <iostream>
 #include <cstdint>
 
@@ -18,3 +21,4 @@ public:
 
 };
 
+#endif

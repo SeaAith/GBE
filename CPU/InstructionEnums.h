@@ -1,3 +1,6 @@
+#ifndef INSTRUCTION_H
+#define INSTRUCTION_H
+
 #include <variant>
 
 enum ArithmeticTarget {
@@ -14,3 +17,5 @@ struct Instruction {
 
     Instruction(Type t, ArithmeticTarget tgt) : type(t), target(tgt) {}
 };
+
+#endif
